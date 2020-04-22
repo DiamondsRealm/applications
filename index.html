@@ -9,6 +9,34 @@
 
 
     <link rel="stylesheet" href="css/style.css">
+	
+	<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+	
+	
   </head>
   <body>
 	<h1>Diamond's Realm Applications</h1>
@@ -16,9 +44,9 @@
     <table>
         <tr>
             <td colspan="2">
-                <div class="menu-wrapper menu-gold">
+                <div class="menu-wrapper menu-dodgerblue">
                     <ul class="menu">
-                        <li><a href=""><i class="fas fa-home"></i>Back to Home</a></li>
+                        <li><a href="https://diamondsrealm.com"><i class="fas fa-home"></i>Back to Home</a></li>
                         <li>
                             <a href=""><i class="fas fa-project-diagram"></i> Team</a>
                             <ul>
@@ -42,5 +70,75 @@
         </tr>
  
     </table>
+	
+		
+
+
+
+
+<h2>Frequently Asked Questions</h2>
+
+<button class="accordion">How long does it take to get a response for an application?</button>
+<div class="panel">
+  <p>It can take up to two weeks for staff to review applications. At that time, we will inform you if your application has been denied or accepted, and what additional information we need.</p>
+</div>
+
+<button class="accordion">What are the requirements to apply for a position?</button>
+<div class="panel">
+  <p>For all positions, you must be able to:
+  <ul>
+	  <li>Work in a team to achieve bigger goals</li>
+	  <li>Have a discord. We may require an interview via discord for your application</li>
+	  <li>Show maturity representitive of the server as a whole: remember, you are the face of the server!</li>
+	  <li>Be able to be on the server consistently- we want to see our staff and builders/developers take an active part in our server!</li>
+	  <li>Motivate yourself and have a good work ethic.</li>
+  </ul></p>
+</div>
+
+<button class="accordion">How old do I have to be to apply for a position?</button>
+<div class="panel">
+  <p>We have no minimum age requirement as long as you present a sufficient amount of maturity; however, you do have to say your age in the application. Lying about your age may result in your application being denied.</p>
+</div>
+
+<button class="accordion">Am I allowed to be a Discord Mod and a Trainee/Jr. Mod/Moderator at the same time?</button>
+<div class="panel">
+  <p>Yes! We welcome you to apply for both positions, and are glad to see members of our community be active.</p>
+</div>
+
+<button class="accordion">What kind of developer are you looking for?</button>
+<div class="panel">
+  <p>We are looking for both back-end developers for java minigames and stability, and Front-End website developers for our website (This includes artists!). If you have demonstrable experience with deep knowledge of functions/command blocks, you can also apply here as well. </p>
+</div>
+
+
+<button class="accordion">What do I need in order to get pardoned from a ban/mute?</button>
+<div class="panel">
+  <p>We will need you to give us a valid reason for us to pardon you. For an inappropriate skin/name/cape, this can be as easy as showing that you changed your name. In other cases, you may need to show proof of ownership for you account, or explain to us why you believe the punishment (or the punishment duration) was unjustified. We like to give people more chances, so be sure to make your explination as thorough as possible.</p>
+</div>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+	
+	
   </body>
 </html>
